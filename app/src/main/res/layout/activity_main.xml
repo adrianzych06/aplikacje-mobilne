@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licznik: 0"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/buttonIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zwiększ"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zmień motyw"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/EditText"
+        android:width="200dp"
+        android:height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Wpisz tekst:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+</LinearLayout>
